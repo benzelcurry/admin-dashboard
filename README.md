@@ -1,1 +1,1 @@
-# admin-dashboard
+Admin dashboard website for The Odin Project's Intermediate HTML & CSS course. The primary purpose of this project is to demonstrate my CSS Grid skills.
