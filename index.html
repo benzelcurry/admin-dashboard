@@ -4,14 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">" "</div>
-        <div class="sidebar">" "</div>
-        <div class="main-content">" "</div>
+        <div class="header">
+            <div class="upper-header">
+                <!-- left side -->
+                <div class="left">
+                    <button>Search</button>
+                    <input type="text" class="search-bar">
+                </div>
+
+                <!-- right side -->
+                <div class="right">
+                    <button>Notifications</button>
+                    <button>User Icon</button>
+                    <button>User Name</button>
+                </div>
+            </div>
+            <div class="lower-header">
+                <!-- left side -->
+                <div class="left">
+                    <button>User Icon</button>
+                    <div class="greeting">
+                        <div class="hello">Hi there,</div>
+                        <div class="username">User Name (@username)</div>
+                    </div>
+                </div>
+
+                <!-- right side -->
+                <div class="right">
+                    <button class="lower">New</button>
+                    <button class="lower">Upload</button>
+                    <button class="lower">Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="page-title">Dashboard</div>
+            <ul class="dash-links">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+            </ul>
+            <ul class="help-links">
+                <li>Settings</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="main-content"></div>
     </div>
 </body>
 </html>
