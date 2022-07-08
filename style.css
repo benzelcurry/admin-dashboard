@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -15,9 +18,11 @@ body {
 
 .header {
     display: grid;
+    position: relative;
     padding: 20px;
-    background-color: rgb(197, 176, 176);
+    background-color: rgb(255, 255, 255);
     grid-column: 2/3;
+    box-shadow: 0 5px 5px grey;
 }
 
 .upper-header {
@@ -41,7 +46,9 @@ body {
 
 .search-bar {
     border-radius: 20px;
+    background-color: #e4e3e3;
     height: 30px;
+    border: none;
 }
 
 .lower-header {
@@ -73,11 +80,11 @@ body {
 /* main content begin */
 .main-content {
     display: grid;
-    background-color: rgb(194, 243, 194);
+    background-color: #e4e3e3;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 8fr 1fr 8fr;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .project-title {
@@ -89,15 +96,12 @@ body {
     grid-column: 1/2;
     grid-row: 2/5;
     display: grid;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: solid black 2px;
-}
-
-.project-card {
-    border: solid black 2px;
+    justify-items: space-between;
+    align-items: space-between;
 }
 
 .announcements-title {
@@ -111,11 +115,6 @@ body {
     display: grid;
     gap: 10px;
     padding: 10px;
-    border: solid 2px black;
-}
-
-.announcement-card {
-    border: solid black 2px;
 }
 
 .trending-title {
@@ -127,10 +126,31 @@ body {
     display: grid;
     gap: 10px;
     padding: 10px;
-    border: solid 2px black;
 }
 
-.trending-card {
-    border: solid 2px black;
-}
 /* main content end */
+
+ul {
+    list-style: none;
+}
+
+.project-title,
+.announcements-title,
+.trending-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.project-card,
+.announcement-card,
+.trending-card {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    /* position: relative; */
+    box-shadow: -10px 0 0 #0284c7;
+    border-radius: 5px;
+}
